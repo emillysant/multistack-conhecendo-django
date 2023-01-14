@@ -11,3 +11,9 @@ Digite cd nivelamento_django e dentro da pasta digite: python manage.py startapp
 
 ## 3 - Executando Projeto: 
 No terminal e dentro da pasta do projeto digite: python manage.py runserver. Deve aparecer: http://127.0.0.1:8000/
+
+## 4 - vinculando a aplicação ao projeto:
+Dentro da pasta do projeto abra a pasta settings. Adicione o nome do pojeto aos INSTALED_APPS = [..., 'app']
+
+## 5 - Executando o migrations (criando uma tabela no banco): 
+Dentro de models, criar uma classe com as propriedades do banco. Depois executa o comando: python manage.py makemigrations
